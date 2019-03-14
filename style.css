@@ -1,0 +1,317 @@
+/*Reset*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Global Styling*/
+.section-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-header{
+    text-transform: uppercase;
+    font-size: 36px;
+    position: relative;
+}
+
+.section-header::after{
+    content: "";
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+    height: 5px;
+}
+
+/*Navigator*/
+#navigator{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+    width: 100%;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.nav-link::before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: #FFF;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    transform: scaleY(0);
+}
+
+.nav-link{
+    font-weight: 600;
+    color: #FFF !important;
+}
+
+.nav-link:hover::before{
+    transform: scaleY(1);
+}
+
+/*Hero Section*/
+#hero{
+    padding-top: 80px;
+    width: 100%;
+    height: calc(100vh);
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+    color: white;
+}
+
+.hero-caption{
+    margin-top: 25px;
+}
+
+.hero-caption h2{
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+.hero-caption h1{
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 23px;
+}
+
+/*About us*/
+.about-us-caption{
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+/*Courses*/
+#courses{
+    background: #6dd5ed;
+}
+
+.courses-header{
+    text-transform: uppercase;
+    font-size: 36px;
+    position: relative;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.courses-header::after{
+    content: "";
+    display: block;
+    width: 200px;
+    margin: 5px auto;
+    background-color: #FFF;
+    height: 5px;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.course-box{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 20px 0px 20px 0px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    cursor: pointer;
+}
+
+.course-box:hover{
+    color: white;
+    border: 1px solid #000;
+    border-radius: 0px 20px 0px 20px;
+    background-color: #203A43;
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.course-box > *{
+    margin: 5px 0px;
+}
+
+.course-box h4{
+    font-size: 30px;
+}
+
+.course-box i{
+    font-size: 50px;
+}
+
+.course-box p {
+    font-size: 20px;
+}
+
+/*Teacher*/
+
+.teacher-box{
+    padding: 10px;
+    margin: 10px 0px;
+    transition: all 0.3s linear 0s;
+}
+
+.teacher-box:hover{
+    box-shadow: 0px 6px 20px 0px #203A43;
+    transform: translateY(-5px);
+}
+
+.teacher-box:hover .teacher-caption{
+    background: #203A43;
+    color: white;
+}
+
+.teacher-caption{
+    background: #6dd5ed;
+    padding: 10px;
+    transition: all 0.3s linear 0s;
+}
+
+/*Testimonials*/
+.testimonial-box{
+    border: 1px solid #203A43;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #203A43;
+    position: relative;
+    margin: 10px auto;
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+}
+
+.testimonial-box:first-child, .testimonial-box:last-child{
+    transform: translateY(30px);
+}
+
+.testimonial-box i {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    background: gainsboro;
+    z-index: 1;
+    position: absolute;
+    bottom: -8%;
+    left: -8%;
+    transition: all 0.3s linear 0s;
+}
+
+.testimonial-box:hover{
+    background: #203A43;
+    color: white;
+}
+
+.testimonial-box:hover i{
+    background: #203A43;
+}
+
+/*Contact form*/
+#contact-us{
+    background-color: #F2F2F2;
+}
+
+.contact-form form > *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form form input{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #6dd5ed;
+}
+
+.contact-form form button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #6dd5ed;
+    transition: all 0.3s linear 0s;
+    font-weight: 600;
+}
+
+.contact-form form button:hover{
+    border: 1px solid #FFF;
+    background-color: #203A43;
+    color: white;
+}
+
+.contact-info p{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #6dd5ed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info p a{
+    margin-left: 5px;
+    
+}
+
+.contact-info p a i{
+    transition: all 0.3s linear 0s;
+}
+
+.contact-info p a:hover i{
+    color: #203A43;
+    transform: scale(1.2);
+}
+
+/*Footer*/
+#footer{
+    background-color: #6dd5ed;
+}
+
+#footer ul{
+    list-style: none;
+}
+
+#footer span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    
+}
+
+#footer ul li a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s linear 0s;
+}
+
+#footer ul li a:hover{
+    color: #203A43;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .testimonial-box:first-child, .testimonial-box:last-child{
+        transform: translateY(0px);
+    }
+
+    .testimonial-box i {
+        left: -2%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .hero-caption, .hero-img{
+        padding-top: 200px;
+    }
+    .about-us-caption{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .about-us-caption{
+        margin-top: 0px;
+    }
+}
+
